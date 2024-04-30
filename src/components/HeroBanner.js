@@ -12,7 +12,11 @@ export function HeroBanner() {
         const swiper = new Swiper('.swiper-container', {
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -45,6 +49,8 @@ export function HeroBanner() {
                 </div>
             </div>
             <div className="swiper-pagination"></div>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
         </div>
     );
 };

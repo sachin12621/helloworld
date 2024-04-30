@@ -12,12 +12,14 @@ import Image from 'react-bootstrap/Image';
 export function Header() {
     return (
         <>
-            <Navbar sticky="top" key='sm' expand='sm' className="bg-body-tertiary mb-3">
-                <Navbar.Brand to="/" as={NavLink}>
-                    <Image src={logo} style={{ width: '90px' }} alt="react" />
-                </Navbar.Brand>
 
-                <Container fluid>
+            <Navbar sticky="top" key='sm' expand='sm' className="bg-body-tertiary mb-3">
+                <div className='d-flex justify-content-center w-100'>
+                    <Navbar.Brand to="/" as={NavLink}>
+                        <Image src={logo} style={{ width: '90px' }} alt="react" />
+                    </Navbar.Brand>
+                </div>
+                <Container fluid className='justify-content-end'>
                     <Navbar.Toggle aria-controls='offcanvasNavbar-expand-sm' />
                     <Navbar.Offcanvas
                         id='offcanvasNavbar-expand-sm'
